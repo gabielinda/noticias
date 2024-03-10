@@ -49,6 +49,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile {
@@ -85,6 +86,11 @@ header.mobile a {
     font-size: 1.125rem;
     line-height: 1.5rem;
 
+}
+
+
+header .desktop {
+    display: none;
 }
 
 main {
@@ -158,7 +164,7 @@ main {
 }
 
 .segunda-seção p{
-    color: var(--almost-white);
+    color:var(--silver);
     font-size: 0.9375rem;
     line-height: 1.625rem;
 }
@@ -191,6 +197,10 @@ main {
      margin-block: 0.6rem;
 }
 
+.terceira-seção a {
+    text-decoration: none ;
+}
+
 
 .terceira-seção p {
     font-size: 0.9375rem;
@@ -199,31 +209,6 @@ main {
 }
 
 @media(min-width: 1110px) {
-    main {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       gap:1.75rem; 
-    }
-    
-    .primeira-seção {
-        grid-column: 1/3;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.75rem;
-
-    }
-    
-
-    .primeira-seção picture {
-        grid-column: 1/3;
-    }
-    
-
-    .primeira-seção img {
-        margin: 0;
-    }
-
-
     header > button {
         display: none;
     }
@@ -241,4 +226,59 @@ main {
         text-decoration: none;
         color: var(--gunnetal);
     }
+    
+
+    header .desktop a:hover {
+        color: var(--vernillion);
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1.75rem; 
+     }
+     
+     .primeira-seção {
+         grid-column: 1/3;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 1.75rem;
+ 
+     }
+     
+ 
+     .primeira-seção picture {
+         grid-column: 1/3;
+     }
+     
+ 
+     .primeira-seção img {
+         margin: 0;
+     }
+ 
+ 
+     .primeira-seção h1 {
+         font-size: 3.5rem;
+ 
+     }
+    
+
+    .primeira-seção button:hover {
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+
+     .segunda-seção h2 {
+         font-size: 2.5rem;
+     }
+
+     .terceira-seção {
+        display: flex;
+        grid-column: 1/4;
+     }
+
+     .terceira-seção h2:hover {
+        color:var(--vernillion) ;
+     }
 }
