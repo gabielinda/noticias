@@ -115,5 +115,26 @@ body{
 
 .terceira-seção img {
     max-width: 6.25rem;
+}
 
+.terceira-seção strong {
+    color: var(--silver);
+    font-size: 2rem;
+    line-height: 100%;
+
+}
+
+.terceira-seção h2 {
+     color: var(--dark-blue);
+     font-size: 1.125rem;
+     font-weight: 800;
+     line-height: 1.5rem;
+     margin-block: 0.6rem;
+}
+
+
+.terceira-seção p {
+    font-size: 0.9375rem;
+    line-height:1.625rem;
+    color: var(--gunnetal);
 }
